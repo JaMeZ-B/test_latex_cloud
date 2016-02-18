@@ -157,3 +157,9 @@ pythontex-files-*/
 
 # Latexian
 TSWLatexianTemp*
+
+# OS X
+.DS_Store
+*.lb
+
+operatoralgebren.pdf
