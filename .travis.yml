@@ -16,4 +16,3 @@ install: true
 
 script:
   - make build
-	
