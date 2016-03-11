@@ -2,6 +2,10 @@ sudo: required
 
 language: latex
 
+cache:
+  directories:
+  - OpAlg_WS15/
+
 services:
   - docker
   
@@ -11,10 +15,5 @@ before_install:
 install: true
 
 script:
-  - make clean
   - make build
-  
-cache:
-  directories:
-  - OpAlg_WS15/
 	
