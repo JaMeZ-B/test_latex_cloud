@@ -2,9 +2,9 @@ sudo: required
 
 language: latex
 
-cache:
-  directories:
-  - OpAlg_WS15/
+# cache:
+#   directories:
+#   - OpAlg_WS15/
 
 services:
   - docker
