@@ -1,0 +1,14 @@
+sudo: required
+
+language: latex
+
+services:
+	- docker
+  
+before_install:
+	- sudo docker build -t texlive docker
+  
+install: true
+
+script:
+	- sudo docker run -it -v $(CURDIR):/var/texlive texlive sh -c "latexmk -pdflatex="xelatex --shell-escape %O %S" -pdf -dvi- -ps- -cd -silent -f -interaction=nonstopmode OpAlg_WS15/operatoralgebren"
