@@ -1,6 +1,6 @@
-TEXFILE = OpAlg_WS15/operatoralgebren.tex
+TEXFILE = operatoralgebren.tex
 
-BASEDIR=$(CURDIR)
+BASEDIR=$(CURDIR)/OpAlg_WS15
 OUTPUTDIR=$(BASEDIR)/output
 
 help:
