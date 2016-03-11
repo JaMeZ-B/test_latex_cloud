@@ -11,4 +11,4 @@ before_install:
 install: true
 
 script:
-  - sudo docker run -it -v .:/var/texlive texlive sh -c "latexmk -pdflatex="xelatex --shell-escape %O %S" -pdf -dvi- -ps- -cd -silent -f -interaction=nonstopmode OpAlg_WS15/operatoralgebren.tex"
+  - sudo docker run -it -v ./OpAlg_WS15/:/var/texlive texlive sh -c "latexmk -pdflatex="xelatex --shell-escape %O %S" -pdf -dvi- -ps- -cd -f -interaction=nonstopmode operatoralgebren.tex"
