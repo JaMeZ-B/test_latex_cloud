@@ -13,3 +13,8 @@ install: true
 script:
   - make clean
   - make build
+  
+cache:
+  directories:
+  - *
+	
