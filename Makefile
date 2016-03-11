@@ -16,7 +16,8 @@ clean:
 	[ ! -d $(OUTPUTDIR) ] || rm -rf $(OUTPUTDIR)
 
 build:
-	sudo docker run -it -v $(BASEDIR):/var/texlive texlive sh -c "latexmk -pdflatex="xelatex --shell-escape %O %S" -pdf -dvi- -ps- -cd -f -interaction=nonstopmode $(TEXFILE)"
+	# sudo docker run -it -v $(BASEDIR):/var/texlive texlive sh -c "latexmk -pdflatex="xelatex --shell-escape %O %S" -pdf -dvi- -ps- -cd -f -interaction=nonstopmode $(TEXFILE)"
+	sudo docker run -it texlive sh -c "ls"
 
 
 .PHONY: help clean build
