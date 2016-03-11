@@ -17,7 +17,7 @@ clean:
 
 build:
 	# sudo docker run -it -v $(BASEDIR):/var/texlive texlive sh -c "latexmk -pdflatex="xelatex --shell-escape %O %S" -pdf -dvi- -ps- -cd -f -interaction=nonstopmode $(TEXFILE)"
-	sudo docker run -it texlive sh -c "ls"
+	sudo docker run -it --rm -v $(pwd):/var/texlive  texlive sh -c "ls"
 
 
 .PHONY: help clean build
