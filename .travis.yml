@@ -16,5 +16,5 @@ script:
   
 cache:
   directories:
-  - OpAlg_WS15
+  - OpAlg_WS15/
 	
