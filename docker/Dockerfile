@@ -1,3 +1,3 @@
 FROM harshjv/texlive-2015
 RUN tlmgr update --self --all
-ADD .. /var/texlive
+ADD https://github.com/JaMeZ-B/test_latex_cloud /var/texlive
