@@ -12,8 +12,8 @@ before_install:
 - ls
 - cd install-tl-2*
 - ls -a
-# - chmod +x install-tl
-# - ./install-tl --help
+- chmod +x install-tl
+- ./install-tl --help
   
 install: true
 
