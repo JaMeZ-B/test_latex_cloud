@@ -1,18 +1,15 @@
-sudo: required
+sudo: false
 
 language: latex
 
 # cache:
 #   directories:
 #   - OpAlg_WS15/
-
-services:
-  - docker
   
-before_install:
-  - sudo docker build -t texlive docker
+before_install: 
+	- wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+	- ls
   
 install: true
 
-script:
-  - make build
+script: echo done
