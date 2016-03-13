@@ -13,8 +13,12 @@ before_install:
 - cd install-tl-2*
 - ls -a
 - chmod +x install-tl
-- ./install-tl
+- mv install-tl ../
+- cd ..
+- ls -a
+
   
-install: true
+install:
+- ./install-tl -profile texlive.profile
 
 script: echo done
