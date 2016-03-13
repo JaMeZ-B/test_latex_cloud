@@ -14,5 +14,10 @@ install:
 - ls -a
 - chmod +x install-tl
 - ./install-tl -profile texlive.profile
+- latexmk --help
+
+cache:
+  directories:
+  - ~
 
 script: echo done
