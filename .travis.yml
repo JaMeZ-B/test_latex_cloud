@@ -7,8 +7,8 @@ language: latex
 #   - OpAlg_WS15/
   
 before_install: 
-	- wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
-	- ls
+- wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
+- ls
   
 install: true
 
