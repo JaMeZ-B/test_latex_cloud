@@ -9,8 +9,9 @@ language: latex
 before_install: 
 - wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 - tar -xzf install-tl-unx.tar.gz
-- chmod +x install-tl
-- ./install-tl --help
+- ls
+# - chmod +x install-tl
+# - ./install-tl --help
   
 install: true
 
