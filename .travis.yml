@@ -1,6 +1,6 @@
 sudo: false
 
-language: latex
+language: perl
 
 # cache:
 #   directories:
