@@ -10,6 +10,8 @@ before_install:
 - wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 - tar -xzf install-tl-unx.tar.gz
 - ls
+- cd install-tl-2*
+- ls -a
 # - chmod +x install-tl
 # - ./install-tl --help
   
