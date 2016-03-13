@@ -6,19 +6,13 @@ language: perl
 #   directories:
 #   - OpAlg_WS15/
   
-before_install: 
+install:
 - wget http://mirror.ctan.org/systems/texlive/tlnet/install-tl-unx.tar.gz
 - tar -xzf install-tl-unx.tar.gz
-- ls
 - cd install-tl-2*
+- mv ../texlive.profile texlive.profile 
 - ls -a
 - chmod +x install-tl
-- mv install-tl ../
-- cd ..
-- ls -a
-
-  
-install:
 - ./install-tl -profile texlive.profile
 
 script: echo done
